@@ -25,9 +25,45 @@
 #		print i
 #	i -= 1 
 
-fruits = ["apples", "oranges", "bananas"]
-i = 0
-while (i<len(fruits)):
-	print fruits[i]
-	i += 1 
-	
+#fruits = ["apples", "oranges", "bananas"]
+#i = 0
+#while (i<len(fruits)):
+#	print fruits[i]
+#	i += 1 
+
+
+#def sum_nums(num):
+#	sum = 0 
+#	i = 0 
+#	while (i < num):
+#		sum += i
+#		i += 1
+#	return sum
+#
+#print sum_nums(3)
+
+
+#def sum_nums(num):
+#	sum = 0 
+#	i = 0 
+#	while (i <= num):
+#		sum += i
+#		i += 1
+#	return sum
+#
+#print sum_nums(3)
+
+def sum_nums2(num):
+	sum = 0 
+	i = 0 
+	if (num < 0):   #if it's negative
+		while (i >= num):    #while we haven't iterated to the passed in argument
+			sum += i      #add the value of i to the sum (negative plus negative)
+			i -= 1      #iterate i to the next negative number
+		return sum
+	elif (num >= 0):   #if it's positive
+		while (i <= num):     #while we haven't iterated to the passed in argument
+			sum += i     #add the value of i to the sum (positive plus positive)
+			i += 1      #iterate i to the next positive number
+		return sum	
+print sum_nums2(-3)
