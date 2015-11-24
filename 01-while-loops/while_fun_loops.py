@@ -80,4 +80,4 @@ def fizz_buzz(num):
 		else:
 			print i
 		i += 1
-print fizz_buzz(100)
+fizz_buzz(100)
